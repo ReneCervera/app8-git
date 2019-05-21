@@ -34,13 +34,13 @@
 			mapholder.style.height ='500px';
 			mapholder.style.width ='750px';
 			var myOptions={
-				center:lation,zoom : 15,
+				center:latlon,zoom : 15,
 				mapTypeld:google.maps.mapTypeld.ROADMAP,
 				mapTypeControl : false
 				navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
 				};
 				var map=new google.maps.Map(document.getElementByid("mapholder"),myOptions);
-				var markee=new google.maps.Marker({position:lation,map:map,title:"You are here!"})
+				var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here!"})
 			}
 			function showError(error)
 			{
